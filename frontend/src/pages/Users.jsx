@@ -8,8 +8,8 @@ export default function Users() {
     const [error, setError] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");
 
-    const API_URL = process.env.REACT_APP_API_URL || "https://recipe-avij.onrender.com/user";
-    const DELETE_URL = "https://recipe-avij.onrender.com/deleteuser";
+    const API_URL = process.env.REACT_APP_API_URL || "https://ey-recipeproject.onrender.com/user";
+    const DELETE_URL = "https://ey-recipeproject.onrender.com/deleteuser";
 
     useEffect(() => {
         fetchUsers();

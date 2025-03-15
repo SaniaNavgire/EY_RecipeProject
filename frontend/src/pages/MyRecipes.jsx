@@ -10,7 +10,7 @@ const MyRecipes = () => {
     useEffect(() => {
         const fetchRecipes = async () => {
             try {
-                const response = await axios.get("https://recipe-avij.onrender.com/getrecipe");
+                const response = await axios.get("https://ey-recipeproject.onrender.com/getrecipe");
                 console.log("API Response:", response.data);
 
                 if (response.data && Array.isArray(response.data.data)) {
@@ -33,7 +33,7 @@ const MyRecipes = () => {
         if (!window.confirm("Are you sure you want to delete this recipe?")) return;
 
         try {
-            await axios.delete(`https://recipe-avij.onrender.com/deleterecipe/${id}`);
+            await axios.delete(`https://ey-recipeproject.onrender.com/deleterecipe/${id}`);
             setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe._id !== id));
 
             if (selectedRecipe && selectedRecipe._id === id) {
