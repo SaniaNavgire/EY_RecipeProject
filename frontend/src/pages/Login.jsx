@@ -5,6 +5,7 @@ import axios from 'axios';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
@@ -22,12 +23,13 @@ const Login = () => {
 
             localStorage.setItem('userToken', response.data.token); // Save token
             alert('Login successful!');
+            navigate('/');
 
-            setTimeout(() => {
-                setEmail('');
-                setPassword('');
-                navigate('/');
-            }, 500);
+            // setTimeout(() => {
+            //     setEmail('');
+            //     setPassword('');
+            //     navigate('/');
+            // }, 500);
 
         } catch (error) {
             console.error('Login error:', error.response?.data || error.message);
@@ -59,17 +61,30 @@ const Login = () => {
                         </div>
                         <div className="mb-3">
                             <label>Password</label>
-                            <input
-                                type="password"
-                                className="form-control"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                required
-                            />
+                            <div classname="input-group">
+                                <input
+                                    type={showPassword ? 'text' : 'password'}
+                                    className="form-control"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    required
+
+                                />
+
+                                <button type="button"
+                                    className="btn btn-outline-secondary"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                    style={{ cursor: 'pointer' }}
+                                >
+                                    {showPassword ? '🙈' : '👁️'}
+                                </button>
+
+                            </div>
                         </div>
-                        <button type="submit" className="btn btn-primary">
+                        <button type="submit" classname="btn btn-primary">
                             Login
                         </button>
+
                     </form>
                 </div>
             </div>

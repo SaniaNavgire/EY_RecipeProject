@@ -57,7 +57,7 @@ const MyRecipes = () => {
                                 className="card shadow-lg border-3"
                                 style={{
                                     width: "350px",
-                                    height: "520px",
+                                    height: "500px",
                                     borderRadius: "15px",
                                     backgroundColor: "#fdfdfd",
                                     borderColor: "#17a2b8",
