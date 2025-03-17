@@ -102,7 +102,12 @@ const RecipeApp = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-6 d-none d-md-block">
-                        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cooking" className="img-fluid rounded-3" />
+                        <img
+                            src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Cooking"
+                            className="img-fluid rounded-3"
+                        />
+
                     </div>
                     <div className="col-md-6">
                         <h2 className="mb-4">Share Your Secret Recipe</h2>
