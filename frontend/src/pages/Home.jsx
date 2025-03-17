@@ -42,7 +42,7 @@ const Home = ({ onAddRecipe }) => {
                 '▢8 to 10 pav (bread rolls)',
                 '▢½ cup finely chopped onions',
                 '▢½ to 1 cup thick sev or farsan (chiwda)',
-                '▢1 lemon or lime quartered & chopped coriander leaves'],
+                '▢1 lemon & chopped coriander leaves'],
             time: '1 hour',
             image: 'https://t3.ftcdn.net/jpg/11/24/33/06/240_F_1124330653_4G7Z4V4bC1So8JIFfOae2lT1ZvZEu6sl.jpg'
         },

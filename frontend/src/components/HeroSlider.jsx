@@ -29,7 +29,7 @@ const HeroSlider = () => {
     const slides = [
         {
             id: 1,
-            image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+            image: 'https://www.mowglistreetfood.com/wp-content/uploads/2023/01/Mowgli_Food_Intro-600x600.jpg',
             title: 'Discover New Recipes',
             text: 'Explore thousands of delicious recipes from around the world'
         },
@@ -41,7 +41,7 @@ const HeroSlider = () => {
         },
         {
             id: 3,
-            image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+            image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             title: 'Cook Like a Pro',
             text: 'Learn professional cooking techniques from our experts'
         }

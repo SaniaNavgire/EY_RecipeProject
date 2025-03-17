@@ -71,12 +71,9 @@ const Login = () => {
 
                                 />
 
-                                <button type="button"
-                                    className="btn btn-outline-secondary"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                    style={{ cursor: 'pointer' }}
-                                >
-                                    {showPassword ? '🙈' : '👁️'}
+                                <button type="submit" className="btn btn-primary w-100 py-2" onClick={() => setShowPassword(!showPassword)} style={{ cursor: 'pointer' }}>
+                                    Login
+
                                 </button>
 
                             </div>
